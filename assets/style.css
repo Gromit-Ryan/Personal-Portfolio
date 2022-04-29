@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: azure;
+}
+
+header {
+    background-color: cadetblue;
+    color: azure;
+    height: 150px;
+
+}
+header h1 {
+    display: flex;
+    font-size: 225%;
+}
+
+header li {
+    color: azure;
+    float: right;
+    font-size: 175%;
+    list-style-type: none;
+    margin-top: 45px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: azure;
+}
+
+main h2 {
+    font-size: 200%;
+
+}
