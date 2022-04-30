@@ -1,24 +1,28 @@
+/*Reset Section so it overrides any browser defaults*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/*Makes background color for body*/
 body {
     background-color: whitesmoke;
 }
 
+/*Sets the header color and background color*/
 header {
     background-color: red;
     color: azure;
     height: 150px;
     position: relative;
 }
+
 header h1 {
     font-size: 225%;
     margin-left: 25px;
 }
-
+/*Removes the dots for the listed anchors*/
 header li {
     color: azure;
     float: right;
@@ -27,60 +31,45 @@ header li {
     margin-top: 45px;
     margin-right: 20px;
 }
-
+/*Removes the default color and sets it as azure for the anchors*/
 header a {
     text-decoration: none;
     color: azure;
 }
-
+/*Setting up a grid in main*/
 main {
     font-size: 175%;
     display: grid;
     grid-template: 30% 35% 35% / 20% 80%;
-    grid-template-areas: "topLeft topRight"
-                          "middleLeft middleRight"
-                          "bottomLeft bottomRight";
     gap: 10px 10px;
     border-bottom: 10px darkgrey solid;
 }
-
+/*Aside section with the text next to the corresponding section*/
 aside {
     grid-column: 1;
     grid-row: 1 / span 3;
     border-right: 10px darkgrey solid;
+    display: grid;
 }
 
 aside h2 {
+    margin-top: 15px;
     text-align: center;
 }
 
 aside h3 {
-    margin-top: 70%;
     text-align: center;
-    grid-area: middleLeft;
 }
-
+/*About me section*/
 .aboutMeSection {
     grid-column: 2;
     grid-row: 1;
     justify-items: center;
     border-bottom: 5px darkgrey solid;
 }
-
+/*Previous Works Section*/
 .projectsSection {
     grid-column: 2 / span 2;
     grid-row: 2 / span 2;
 }
     
-img {
-    max-width: 100%;
-    height: auto;
-    margin: 15px;
-}
-.grandDayOut {
-    grid-area: middleRight;
-}
-
-.otherTwo {
-    grid-area: bottomRight;
-}
