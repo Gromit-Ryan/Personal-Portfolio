@@ -34,7 +34,11 @@ header a {
     color: azure;
 }
 
+main {
+    font-size: 175%;
+}
+
 main h2 {
-    font-size: 200%;
+    font-size: 175%;
 
 }
