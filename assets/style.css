@@ -9,14 +9,14 @@ body {
 }
 
 header {
-    background-color: rgb(253, 91, 91);
+    background-color: red;
     color: azure;
     height: 150px;
-
+    position: relative;
 }
 header h1 {
-    display: flex;
     font-size: 225%;
+    margin-left: 25px;
 }
 
 header li {
@@ -26,7 +26,6 @@ header li {
     list-style-type: none;
     margin-top: 45px;
     margin-right: 20px;
-    padding: 10px;
 }
 
 header a {
@@ -36,9 +35,52 @@ header a {
 
 main {
     font-size: 175%;
+    display: grid;
+    grid-template: 30% 35% 35% / 20% 80%;
+    grid-template-areas: "topLeft topRight"
+                          "middleLeft middleRight"
+                          "bottomLeft bottomRight";
+    gap: 10px 10px;
+    border-bottom: 10px darkgrey solid;
 }
 
-main h2 {
-    font-size: 175%;
-    position: relative; 
+aside {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    border-right: 10px darkgrey solid;
+}
+
+aside h2 {
+    text-align: center;
+}
+
+aside h3 {
+    margin-top: 70%;
+    text-align: center;
+    grid-area: middleLeft;
+}
+
+.aboutMeSection {
+    grid-column: 2;
+    grid-row: 1;
+    justify-items: center;
+    border-bottom: 5px darkgrey solid;
+}
+
+.projectsSection {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
+}
+    
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 15px;
+}
+.grandDayOut {
+    grid-area: middleRight;
+}
+
+.otherTwo {
+    grid-area: bottomRight;
 }
