@@ -5,11 +5,11 @@
 }
 
 body {
-    background-color: azure;
+    background-color: whitesmoke;
 }
 
 header {
-    background-color: cadetblue;
+    background-color: rgb(253, 91, 91);
     color: azure;
     height: 150px;
 
@@ -40,5 +40,5 @@ main {
 
 main h2 {
     font-size: 175%;
-
+    position: relative; 
 }
